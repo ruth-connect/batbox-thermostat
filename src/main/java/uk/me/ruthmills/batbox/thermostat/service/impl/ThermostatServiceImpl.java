@@ -17,7 +17,7 @@ public class ThermostatServiceImpl implements ThermostatService {
 	
 	private static final String LOLDHT_PATH = "/usr/local/bin/loldht";
 	private static final String GPIO_PORT = "8";
-	private static final String NUM_RETRIES = "5";
+	private static final String NUM_RETRIES = "10";
 	
 	private static final Logger LOGGER = Logger.getLogger(ThermostatServiceImpl.class);
 
