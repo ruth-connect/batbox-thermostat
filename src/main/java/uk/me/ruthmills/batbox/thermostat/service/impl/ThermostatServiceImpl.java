@@ -34,6 +34,8 @@ public class ThermostatServiceImpl implements ThermostatService {
 				if ((line != null) && line.startsWith("Humidity")) {
 					String humidity = line.substring("Humidity = ".length(), line.indexOf("%") - 1);
 					String temperature = line.substring(line.indexOf("Temperature = ") + "Temperature = ".length(), line.indexOf("*") - 1);
+					System.out.println("Humidity: <" + humidity + ">");
+					System.out.println("Temperature: <" + temperature + ">");
 					temperatureAndHumidityBean.setHumidity(new BigDecimal(humidity));
 					temperatureAndHumidityBean.setTemperature(new BigDecimal(temperature));
 				}
